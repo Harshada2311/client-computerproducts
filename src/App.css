@@ -238,3 +238,115 @@ body {
   font-size: 14px;
   margin: 4px 0;
 }
+/* NavBar section */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #007bff;
+  position: sticky;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Home Section*/
+
+/* Home.css */
+.home-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps sharp scaling */
+  z-index: -1;
+  filter: brightness(60%); /* Optional dark overlay effect */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+.btn-outline:hover {
+  background-color: #3498db;
+  color: white;
+}
+

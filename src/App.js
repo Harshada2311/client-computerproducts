@@ -6,6 +6,8 @@ import Register from './pages/Register';
 import Products from './pages/Products';
 import Wishlist from './pages/WishList';
 import { AuthProvider, useAuth } from './AuthContext';
+import Navbar from './pages/Navbar';
+import Home from './pages/Home';
 
 const PrivateRoute = ({ children }) => {
   const { token } = useAuth();
@@ -16,7 +18,9 @@ export default function App() {
   return (
     <AuthProvider>
       <Router>
+        <Navbar/>
         <Routes>
+          <Route path ="/" element={<Home/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/products" element={<PrivateRoute><Products /></PrivateRoute>} />

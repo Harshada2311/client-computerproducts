@@ -20,18 +20,16 @@ export default function Products() {
   
   return (
    <div className="products-wrapper">
-      <h2 style={{ textAlign: 'center', marginBottom: '1rem' }}>Products</h2>
+      <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}> All Products</h1>
 
       <ul className="products-grid">
         {products.map((p) => (
           <li key={p._id} className="product-card">
-            {/* If you have images: <img src={p.imageUrl} alt={p.name} /> */}
+          <img src={p.image} alt={p.name} /> 
             <div className="product-content">
-              <h3 className="product-title">{p.name}</h3>
-              <p>{p.category}</p>
-                 <p>{p.quantity}</p>
-                    <p>{p.category}</p>
-              
+              <h3 className="product-title">{p.name}</h3>  
+               
+                 <p>{p.description}</p>
               <span className="product-price">₹{p.price}</span>
               {/* Example action button */}
               {/* <button onClick={() => handleAddToCart(p._id)}>Add to Cart</button> */}

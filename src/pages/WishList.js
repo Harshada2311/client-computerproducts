@@ -11,8 +11,9 @@ export default function Wishlist() {
     axios.get(`${baseUrl}/wishlist`, {
       headers: { Authorization: token }
     })
-      .then((res) => res.json())
-      .then(setWishlist);
+      .then((res) => setWishlist(res.data))
+      .catch((err) => console.error(err));
+    
   }, [token]);
 
   return (
