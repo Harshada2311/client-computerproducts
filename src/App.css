@@ -30,7 +30,7 @@ body {
   background: var(--card-bg);
   border-radius: var(--radius);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  padding: 2.5rem 2rem;
+  padding: 2.5rem;
 }
 
 /* ---------- headings ---------- */
@@ -43,7 +43,7 @@ body {
 /* ---------- inputs ---------- */
 .register-card input {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem ;
   margin-bottom: 1rem;
   border: 1px solid #d1d5db;
   border-radius: var(--radius);
@@ -102,8 +102,9 @@ body {
   background: var(--card-bg);
   border-radius: var(--radius);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  padding: 2.5rem 2rem;
+  padding: 2.5rem ;
 }
+
 
 .login-card h2 {
   margin: 0 0 1.5rem;
@@ -113,13 +114,15 @@ body {
 
 .login-card input {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem ;
   margin-bottom: 1rem;
   border: 1px solid #d1d5db;
   border-radius: var(--radius);
   font-size: 1rem;
-  transition: border 200ms, box-shadow 200ms;
+  /* transition: border 200ms, box-shadow 200ms; */
+  transition: border var(--transition), box-shadow var(--transition);
 }
+
 
 .login-card input:focus {
   outline: none;
@@ -247,6 +250,8 @@ body {
   padding: 16px 40px;
   background: #007bff;
   position: sticky;
+  top: 0;              /* Required for sticky to work */
+  z-index: 1000;
 }
 
 .navbar .logo {
