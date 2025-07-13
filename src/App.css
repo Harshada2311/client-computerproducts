@@ -8,6 +8,13 @@
   --text: #1f2937;
   --radius: 0.75rem;
   --transition: 200ms;
+   --btn-bg: #ff0066;
+  --btn-bg-hover: #cc0052;
+  --btn-text: #fff;
+  --btn-radius: 8px;
+  --btn-padding: 6px 12px;
+  --btn-font-size: 0.875rem;
+  --btn-transition: 0.2s ease;
 }
 
 body {
@@ -355,3 +362,34 @@ body {
   color: white;
 }
 
+/*.wish-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.product-card { position: relative; }
+*/
+.btn-wishlist {
+  background-color: var(--btn-bg, #ff0066);
+  color: var(--btn-text, #fff);
+  padding: 4px 10px;             /* smaller padding */
+  font-size: 0.75rem;            /* smaller text */
+  border: none;
+  border-radius: 6px;            /* softer round edges */
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;           /* prevents text wrapping */
+}
+
+.btn-wishlist:hover {
+  background-color: var(--btn-bg-hover, #cc0052);
+  transform: scale(1.05);        /* slight zoom on hover */
+}
+
+.btn-wishlist:active {
+  transform: scale(1);
+}

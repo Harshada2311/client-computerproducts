@@ -8,7 +8,7 @@ export default function Navbar() {
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to = "/register">Register</Link></li>
-        {/* <li><Link to="/products">My Products</Link></li> */}
+        <li><Link to="/Wishlist">My WishList</Link></li> 
       </ul>
     </nav>
   );
